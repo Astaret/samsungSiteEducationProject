@@ -1,7 +1,19 @@
+@font-face {
+  font-family: 'SamsungOne';
+  src: url('/SamsungOne-700.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
 body {
-    font-family: 'SamsungOne', Arial, sans-serif;
+    font-family: 'SamsungOne', sans-serif;
     margin: 0;
     padding: 0;
+    text-decoration: none;
+}
+
+div{
+    padding-bottom: 12px;
 }
 
 .header {
@@ -17,7 +29,6 @@ body {
     position: relative;
     width: 100%;
     height: 100%;
-    font-size: 0;
     z-index: 2000;
     display: block;
 }
@@ -52,17 +63,19 @@ body {
 
 .left_menu li{
     display: inline-flex;
+    margin: 0;
+    padding: 0;
+    padding-left: 10px;
     align-items: center;
     height: 100%;
-    font-size: 20px;
-    margin-right: 20px;
-    justify-content: center;
+    margin-right: 1px;
+    justify-content: flex-start;
 }
 
 .right_menu{
     position: absolute;
-    top: 5px;
-    right: 8%;
+    top: 20px;
+    right: 11%;
     margin-right: -720px;
     height: 26px;
     padding: 0 16px;
@@ -81,11 +94,25 @@ body {
     box-sizing: border-box;
 }
 
-.navbar_menu_option a {
-    font-size: 14px;
-    font-weight: bold;
-    padding: 8px 4px;
-    transition: color 0.3s ease;
+.navbar_menu_option button {
+    display: inline-flex;
+    justify-content: flex-start;
+    position: relative;
+    align-items: center;
+    height: 32px;
+    font-size: 16px;
+    z-index: 3;
+    color: black;
+    width: auto;
+    overflow: visible;
+    font: inherit;
+    border-radius: 0;
+    cursor: pointer;
+    line-height: normal;
+    list-style: outside none none;
+    background: 0;
+    border: 0;
+    margin: 0;
 }
 
 .navbar_menu_option a:hover {
@@ -99,12 +126,13 @@ body {
     padding: 8px 13px;
     box-sizing: border-box;
     border-radius: 100px;
+    border: 2px;
     box-shadow: none;
     width: 170px;
-    gap: 8px;
     font-size: 14px;
     font-weight: bold;
     outline: none;
+    color: gray;
 }
 
 #search_logo_navbar {
@@ -119,6 +147,7 @@ body {
     align-items: center;
     position: relative;
     height: 100%;
+    padding-left: 30px;
 }
 
 .man_acc_logo svg {
