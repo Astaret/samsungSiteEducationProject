@@ -1,0 +1,99 @@
+figure video{
+    display: block;
+}
+
+div video{
+    height: 0;
+    z-index: 500;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body h2{
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 1.2;
+    word-wrap: break-word;
+}
+
+.name_in_video{
+    position: absolute;
+    width: 620px;
+    z-index: 600;
+    bottom: 112px;
+    left: 88px;
+    color: white;
+}
+
+.carousel{
+    position: relative;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.necarousel{
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    overflow: hidden;
+    padding: 0;
+    z-index: 1;
+}
+
+.home_button{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.home_button a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 9px 23px 10px 23px;
+    border-radius: 20px;
+    border-width: 1px;
+    border-style: solid;
+    background-color: white;
+}
+
+.necarousel button{
+    width: 56px;
+    height: 56px;
+    padding: 8px;
+    position: absolute;
+    top: 50%;
+    border: 0;
+    margin: 0;
+    overflow: visible;
+    text-align: inherit;
+    border-radius: 0;
+    display: block;
+    fill: black;
+    background-color: black;
+    cursor: pointer;
+}
+
+.right{
+    right: 40px;
+}
+
+.left{
+    left: 40px;
+}
+
+#circle{
+    stroke: #fff;
+    stroke-opacity: .15;
+}
+
+#arrow{
+    fill: #fff;
+    fill-opacity: .95;
+}
